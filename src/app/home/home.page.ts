@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Platform, AlertController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,33 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private plt : Platform, 
+     private alertCtrl : AlertController) {
+
+     
+    }
+
+
+
+    
+
+
+  
+
+
+ 
+
+    getAll(){
+
+    }
+
+    showAlert(header, sub, msg){
+      this.alertCtrl.create({
+        header: header,
+        subHeader: sub,
+        message: msg,
+        buttons: ['Okay']
+      }).then(alert => alert.present());
+        }
 
 }

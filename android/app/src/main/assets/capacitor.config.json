@@ -3,7 +3,11 @@
 	"appName": "notificationApp",
 	"webDir": "www",
 	"bundledWebRuntime": false,
-	"PushNotifications":{
-		"presentationOptions": ["badge", "sound", "alert"]
+	"PushNotifications": {
+		"presentationOptions": [
+			"badge",
+			"sound",
+			"alert"
+		]
 	}
 }

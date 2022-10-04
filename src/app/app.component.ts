@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FcmService } from './services/fcm.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private fcm: FcmService) {
+    console.log("#############################################################################");
+    console.log("#############################################################################");
+    console.log("#############################################################################");
+    console.log("#############################################################################");
+    console.log("#############################################################################");
+    
+    this.fcm.initPush();
+  }
 }
